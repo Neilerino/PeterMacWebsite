@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Required Core stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <!-- Optional Theme stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
   <script src="./Alertify/alertify.js" type="text/javascript"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
   <script src="mainpage.js" type="text/javascript"></script>
 </head>
 <style>
@@ -113,20 +118,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <!-- This is where I want to put a picture merry-go-round-->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="container">
-            <div class="header"></div>
-            <div id="slider">
-                <ul class="slides">
-                    <li class="slide slide1">slide1</li>
-                    <li class="slide slide2">slide2</li>
-                    <li class="slide slide3">slide3</li>
-                    <li class="slide slide4">slide4</li>
-                    <li class="slide slide5">slide5</li>
-                    <li class="slide slide1">slide1</li>
-                </ul>
-            </div>
-
-        </div>
+    <div class="glide">
+  		<div data-glide-el="track" class="glide__track">
+    		<ul class="glide__slides">
+      		<li class="glide__slide"></li>
+      		<li class="glide__slide"></li>
+      		<li class="glide__slide"></li>
+    	</ul>
+  </div>
+</div>
     <!-- End picture merry-go-round-->
     </div>
   <!-- End Recording Section -->
